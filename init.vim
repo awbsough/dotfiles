@@ -29,11 +29,11 @@ Plug 'junegunn/fzf.vim'
 " Git Gutter for better git diffs
 Plug 'airblade/vim-gitgutter'
 
-" Conquer of Compelation
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " Floating Terminal
 Plug 'voldikss/vim-floaterm'
+
+" Enable Language Server Protocol
+Plug 'neovim/nvim-lspconfig'
 
 " End vim-plug config
 call plug#end()
@@ -132,6 +132,10 @@ let g:floaterm_keymap_toggle = '`'
 
 " Remap Ctrl + W to ;
 nnoremap ; <C-w>
+
+" Line numbers and relative line numbers
+set number
+set relativenumber 
 
 " Transparent BG
 hi! Normal ctermbg=NONE guibg=NONE
